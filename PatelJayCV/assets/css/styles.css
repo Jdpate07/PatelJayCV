@@ -531,10 +531,6 @@ img{
   bottom: 5rem;
 }
 
-/*========== MEDIA QUERIES ==========*/
-/* For small devices, menu two columns */
-
-
 /* Classes modified for large screen size */
 @media screen and (min-width: 968px){
   body{

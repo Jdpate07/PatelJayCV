@@ -84,31 +84,12 @@ themeButton.addEventListener('click', () => {
 })
 
 
-/*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/ 
-
-
-/*==================== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ====================*/ 
-
-
-/*==================== GENERATE PDF ====================*/ 
-// PDF generated area
-
-
-// Html2pdf options
-
-
-// Function to call areaCv and Html2Pdf options 
-
-
-// When the button is clicked, it executes the three functions
 document.getElementById('resume-button').addEventListener('click', () => {
-    // Define the file path relative to your website's folder structure
-    const filePath = 'assets/pdf/ResumeCv.pdf';  // Update this with your actual file path
+    const filePath = 'assets/pdf/ResumeCv.pdf';  //  actual file path
 
-    // Create an invisible anchor tag element
     const a = document.createElement('a');
     a.href = filePath;
-    a.download = 'PatelJayCV.pdf';  // Optional: you can set the filename that the user will see when downloading
+    a.download = 'PatelJayCV.pdf';  
     
     // Append the anchor tag to the document body (required for Firefox)
     document.body.appendChild(a);
@@ -119,11 +100,3 @@ document.getElementById('resume-button').addEventListener('click', () => {
     // Remove the anchor tag from the document after the download starts
     document.body.removeChild(a);
 });
-
-    // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
-
-
-    // 2. The PDF is generated
-
-
-    // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
