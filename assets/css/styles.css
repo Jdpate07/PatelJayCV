@@ -13,6 +13,8 @@
   --container-color: #FAFAFA;
   --container-color-alt: #F0EFEF;
   --body-color: #FCFCFC;
+  --selection-bg-color: #707070;
+  --selection-text-color: #FAFAFA;
 
   /*========== Font and typography ==========*/
   --body-font: 'Afacad Flux', serif;
@@ -51,6 +53,8 @@ body.dark-theme{
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2B2B2B;
+  --selection-bg-color: #BFBFBF;
+  --selection-text-color: #212121;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -171,6 +175,10 @@ body{
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+}
+body::selection{
+  background-color: var(--selection-bg-color);
+  color: var(--selection-text-color);
 }
 
 h1,h2,h3,ul,p{
